@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo {
+    @apply text-2xl text-white font-bold cursor-pointer hover:text-red-300 duration-1000;
+  }
+  .menu {
+    @apply w-full bg-blue-500 h-20 shadow flex justify-between items-center fixed p-4;
+  }
+  .lista {
+    @apply flex gap-4;
+  }
+  .itens {
+    @apply text-white text-[18px] font-sans hover:text-red-300 duration-1000;
+  }
+  .btn-compra {
+    @apply bg-white w-[150px] py-1 rounded-full font-serif text-blue-600 hover:text-white hover:bg-red-400 duration-1000 shadow outline-none;
+  }
+  .title {
+    @apply text-2xl text-white mb-2
+  }
+  .message {
+    @apply text-center text-white mt-3 mb-3
+  }
+}
