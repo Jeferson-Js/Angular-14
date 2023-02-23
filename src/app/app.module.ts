@@ -10,6 +10,7 @@ import { AboutComponentComponent } from './components/about-component/about-comp
 import { ContactComponentComponent } from './components/contact-component/contact-component.component';
 import { CardsComponentComponent } from './components/cards-component/cards-component.component';
 import { FormComponentComponent } from './components/form-component/form-component.component';
+import { ConteudoComponentComponent } from './components/conteudo-component/conteudo-component.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormComponentComponent } from './components/form-component/form-compone
     AboutComponentComponent,
     ContactComponentComponent,
     CardsComponentComponent,
-    FormComponentComponent
+    FormComponentComponent,
+    ConteudoComponentComponent
   ],
   imports: [
     BrowserModule,
