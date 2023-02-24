@@ -1,0 +1,42 @@
+<header class="flex">
+  <nav
+    class="flex fixed justify-between items-center w-full h-20 shadow shadow-red-400 bg-blue-500 p-3"
+  >
+    <a class="text-3xl text-white hover:text-red-300 duration-1000" href="#"
+      >Oliveira.js</a
+    >
+    <button class="outline-none" (click)="showMenu()">
+      <i class="ph-list bg-white text-sm p-1 rounded"></i>
+    </button>
+    <ul class="lista-menu flex items-center gap-3">
+      <li class="text-20 text-white hover:text-red-300 duration-1000 p-3">
+        <a href="#">Home</a>
+      </li>
+      <li class="text-20 text-white hover:text-red-300 duration-1000 p-3">
+        <a href="#">About</a>
+      </li>
+      <li class="text-20 text-white hover:text-red-300 duration-1000 p-3">
+        <a href="#">Gallery</a>
+      </li>
+      <li class="text-20 text-white hover:text-red-300 duration-1000 p-3">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <div class="mobile-menu">
+      <ul class="block items-center gap-3" *ngIf="mostrar">
+        <li class="text-20 text-blue-500 hover:text-red-300 duration-1000 p-3">
+          <a href="#">Home</a>
+        </li>
+        <li class="text-20 text-blue-500 hover:text-red-300 duration-1000 p-3">
+          <a href="#">About</a>
+        </li>
+        <li class="text-20 text-blue-500 hover:text-red-300 duration-1000 p-3">
+          <a href="#">Gallery</a>
+        </li>
+        <li class="text-20 text-blue-500 hover:text-red-300 duration-1000 p-3">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
